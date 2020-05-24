@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+</head>
+<body>
+	<header>
+		<nav-bar></nav-bar>
+		<header-content></header-content>
+	</header>
+	<content class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<search-component></search-component>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="col-12">
+				<h1 id="content-title" class="text-center mt-5">-- List Movie Terpopuler --</h1>
+				<hr class="pembatas">
+			</div>
+			<movie-list></movie-list>
+		</div>
+	</content>
+	<footer>
+		<p>Copyright &copy; 2020. All Right Reserved.</p>
+	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalDetailMovie" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="modalTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+      		<div class="row">
+      			<div class="col-lg-3">
+	      			<img id="poster-movie" src="http://image.tmdb.org/t/p/w185/wlfDxbGEsW58vGhFljKkcR5IxDj.jpg">
+	      		</div>
+	      		<div class="col-lg-9">
+      				<table class="table">
+      					<tr>
+      						<td><h1 id="movie-title">{Movie Title}</h1></td>
+      					</tr>
+      					<tr>
+      						<td><p id="release-date">{Release Date}</p></td>
+      					</tr>
+      					<tr>
+      						<td><p id="duration">{Durasi Movie}</p></td>
+      					</tr>
+      					<tr>      						
+      						<td>
+      							<p>Sinopsis:</p>
+      							<p id="overview" class="text-justify"></p>
+      						</td>
+      					</tr>
+      					<tr>
+      						<td>
+      							<p id="genreInclude">Genre: </p>
+      						</td>
+      					</tr>
+      					<tr>
+      						<td>
+      							<p id="produserInclude"></p>
+      						</td>
+      					</tr>
+      					<tr>
+      						<td>
+      							<p>Homepage: <a id="movie-homepage" href="#" target="_blank">{Movie Title}</a></p>
+      						</td>
+      					</tr>
+      				</table>
+      			</div>
+      		</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+</body>
+</html>
